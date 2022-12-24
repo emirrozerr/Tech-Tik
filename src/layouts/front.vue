@@ -1,18 +1,20 @@
 <template>
     <div class="fixed-top">
-        <Navbar></Navbar>
+        <SignIn></SignIn>
         <div class="container">
-            <slot name="content"></slot>
+            <slot name="content"> </slot>
         </div>
     </div>
 </template>
 
 <script>
+import Login from '../components/Login.vue';
 import Navbar from '../components/Navbar.vue';
+import SignIn from '../components/SignIn.vue';
 
 export default {
     name: "Front",
-    components: { Navbar }
+    components: { Navbar, Login, SignIn }
 }
 </script>
 
