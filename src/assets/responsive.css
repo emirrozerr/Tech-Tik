@@ -1,0 +1,20 @@
+@media screen and (max-width: 980px){
+    .banner-image img{
+        height: 250px !important;
+        width: 270px !important;
+        object-fit: cover !important;
+    }
+    .container-banner{
+        justify-content: space-evenly !important;
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    .banner-image{
+       display: none !important;
+    }
+    .container-banner{
+        justify-content: flex-start !important;
+        margin-left: 40px !important;
+    }
+  }

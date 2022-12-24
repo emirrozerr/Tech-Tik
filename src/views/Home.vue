@@ -1,16 +1,17 @@
-<template>
-    <Front>
-        <template v-slot:content>
-        </template>
-    </Front>
-</template>
 <script>
-import Front from '../layouts/front.vue';
+import Banner from '../components/Banner.vue';
 export default {
     name: "Home",
-    components: { Front }
+    components: { Banner }
 }
 </script>
+
+<template>
+    <div>
+        <Banner/>
+    </div>
+</template>
+
 <style>
     
 </style>
