@@ -12,14 +12,25 @@ const router = new VueRouter({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: Home,
+      meta:{
+        title:'Home'
+      }
     },
     {
       path: '/signUp',
       name: 'signUp',
-      component: Login
+      component: Login,
+      meta:{
+        title:'Login'
+      }
     },
   ]
+})
+
+router.beforeEach((to, from, next) => {
+  document.title = to.meta.title
+  next()
 })
 
 export default router

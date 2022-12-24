@@ -1,3 +1,11 @@
+body{
+    height: 4000px;
+}
+
+.container{
+    margin: 0px 20px;
+}
+
 #banner{
     background-color: #136AF8;
     width: 100%;
@@ -45,10 +53,25 @@
     color: #000000;
 }
 #home-products-section{
-    background-color: #F5F5F5;
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: auto;
+}
+.home-products-section-container{
+    margin-top: 120px;
+}
+.home-products{
+    width: 100%;
+    height: auto;
+    background-color: #081B30;
+    margin-top: 140px;
+    padding: 80px 0px !important;
+}
+.home-products-card{
     display: flex;
-    justify-content: center;
+    box-sizing: border-box;
+    padding: 10px;
     align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: rgba(0, 0, 0, 0.637);
 }
