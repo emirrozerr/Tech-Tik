@@ -11,7 +11,7 @@ const router = new VueRouter({
   base: import.meta.env.BASE_URL,
   routes: [
     {
-      path: '/',
+      path: '/home',
       name: 'home',
       component: Home,
       meta:{
@@ -19,8 +19,8 @@ const router = new VueRouter({
       }
     },
     {
-      path: '/login',
-      name: 'login',
+      path: '/',
+      name: 'Login',
       component: Login,
       meta:{
         title:'Login'
@@ -28,10 +28,10 @@ const router = new VueRouter({
     },
     {
       path: '/signup',
-      name: 'signUp',
+      name: 'SignUp',
       component: SignUp,
       meta:{
-        title:'Login'
+        title:'SignUp'
       }
     },
   ]

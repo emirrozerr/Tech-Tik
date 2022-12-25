@@ -5,6 +5,7 @@ import SignIn from './components/SignUp.vue';
 import Banner from './components/Banner.vue';
 import HomeProducts from './components/Banner.vue';
 import Footer from './components/Footer.vue'
+import Home from './views/Home.vue'
 export default{
     name: 'App',
     components: {
@@ -13,16 +14,15 @@ export default{
         SignIn,
         Banner,
         HomeProducts,
-        Footer
+        Footer,
+        Home
     }
 }
 </script>
 
 <template>
     <div>
-        <Navbar/>
         <router-view />
-        <Footer/>
     </div>
 
 </template>

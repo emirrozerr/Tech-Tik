@@ -23,16 +23,36 @@
             <div class="account">
                 <div class="account-title text-center"><h2 class="fw-bold fs-1">Tech-<span style="color:#136AF8;">Tık</span></h2></div>    
                 <div class="account-form">
-                  <form action="" method="POST">
-                    <input type="text" placeholder="Username" name="username" id="">
-                    <input type="text" placeholder="Password" name="password" id="">
-                    <button class="account-btn" type="submit">Login</button>
-                    <a class="account-link" href="">Forgot Password ?</a>
+
+                  <p class="text-danger " v-if="userErrors">
+                    {{ userErrors }}
+                  </p>
+
+                  <form>
+                    <input
+                      id="email"
+                      v-model="email"
+                      type="text"
+                      placeholder="Email"
+                    >
+                    <small style="text-align:left" v-if="errors.length" class="text-danger " >{{ errors[0] }}</small>
+            
+                    <input
+                      id="password"
+                      v-model="password"
+                      type="password"
+                      placeholder="Password"
+                    >
+                    <small style="text-align:left" v-if="errors.length" class="text-danger " >{{ errors[1] }}</small>
+              
+                    <b-button @click="checkForm()" class="account-btn mt-3" variant="primary">Login</b-button>
+
+                      <a class="account-link" href="">Forgot Password ?</a>
                   </form>
                 </div>
             </div>
             <div class="account-sub">
-               <a href="/signup">Don't have an account ? Sign Up</a> 
+               <p >Don't have an account ? <a href="" @click="goToSignUp()">Sign Up</a></p> 
             </div>
         </div>
         </div>
@@ -51,16 +71,53 @@ export default {
     name: "Login",
     data() {
     return {
-      options:[
-        {name: "aa",title:"bb"},
-    ],
-    sideImg: require('@/assets/images/image 1.svg'),
+ 
+    email: null,
+    password: null,
+
+    errors: [],
+    userErrors: null,
+    
     }
   },
   methods: {
-    goToLogin(){
-        // this.$router.push('/')
+    goToSignUp(){
+      this.$router.push('/signUp')
+    },
+    checkForm(){
+      console.log(this.email)
+      console.log(this.password)
+      this.errors = []
+      if(!this.email){
+        this.errors.push('Email required.');
+      }
+      if(!this.password){
+        this.errors.push('Password required.');
+      }
+
+      if(this.errors.length === 0){
+        this.validateUser()
+      }
+    },
+    validateUser(){
+      this.userErrors = []
+      if(this.email == localStorage.getItem('email')){
+        if(this.password == localStorage.getItem('password')){
+          this.$router.push('/home')
+        }
+      }else{
+        this.userErrors = "Incorrect email or password"
+      }
     }
+  },
+  created(){
+    if(localStorage.getItem('email') == "" || localStorage.getItem('email') === null ){
+      localStorage.setItem('email',"admin@techtik.com")
+    }
+    if (localStorage.getItem('password') == "" || localStorage.getItem('password') === null) {
+      localStorage.setItem('password',"1234")
+    }
+    
   }
 }
 </script>
