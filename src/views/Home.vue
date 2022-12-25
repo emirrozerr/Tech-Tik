@@ -1,9 +1,10 @@
 <script>
 import Banner from '../components/Banner.vue';
 import HomeProducts from '../components/HomeProducts.vue';
+import HomeAbout from '../components/HomeAbout.vue';
 export default {
     name: "Home",
-    components: { Banner, HomeProducts }
+    components: { Banner, HomeProducts,HomeAbout }
 }
 </script>
 
@@ -11,6 +12,7 @@ export default {
     <div>
         <Banner/>
         <HomeProducts/>
+        <HomeAbout/>
     </div>
 </template>
 

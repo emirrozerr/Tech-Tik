@@ -19,52 +19,22 @@
         </div>
 
         <div class="col-lg-6 mb-5 mb-lg-0">
-          <div class="card">
-            <div class="card-body py-5 px-md-5">
-              <form>
-            
-                <div class="row">
-                  <div class="col-md-6 mb-4">
-                    <div class="form-outline">
-                      <input type="text" id="form3Example1" class="form-control" />
-                      <label class="form-label" for="form3Example1">First name</label>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-4">
-                    <div class="form-outline">
-                      <input type="text" id="form3Example2" class="form-control" />
-                      <label class="form-label" for="form3Example2">Last name</label>
-                    </div>
-                  </div>
+          <div class="account-container">
+            <div class="account">
+                <div class="account-title text-center"><h2 class="fw-bold fs-1">Tech-<span style="color:#136AF8;">Tık</span></h2></div>    
+                <div class="account-form">
+                  <form action="" method="POST">
+                    <input type="text" placeholder="Username" name="username" id="">
+                    <input type="text" placeholder="Password" name="password" id="">
+                    <button class="account-btn" type="submit">Login</button>
+                    <a class="account-link" href="">Forgot Password ?</a>
+                  </form>
                 </div>
-
-                <!-- Email input -->
-                <div class="form-outline mb-4">
-                  <input type="email" id="form3Example3" class="form-control" />
-                  <label class="form-label" for="form3Example3">Email address</label>
-                </div>
-
-                <!-- Password input -->
-                <div class="form-outline mb-4">
-                  <input type="password" id="form3Example4" class="form-control" />
-                  <label class="form-label" for="form3Example4">Password</label>
-                </div>
-
-        
-
-                <!-- Submit button -->
-                <button type="submit" class="btn btn-primary btn-block mb-4">
-                  Sign up
-                </button>
-
-                <!-- Register buttons -->
-                <div class="text-center">
-                  <p>Do you have an account?</p>
-                  <a class="text-decoration-none" href="/" @click="goToLogin()">Login</a>
-                </div>
-              </form>
             </div>
-          </div>
+            <div class="account-sub">
+               <a href="/signup">Don't have an account ? Sign Up</a> 
+            </div>
+        </div>
         </div>
       </div>
     </div>

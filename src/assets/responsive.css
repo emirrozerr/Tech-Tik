@@ -7,6 +7,14 @@
     .container-banner{
         justify-content: space-evenly !important;
     }
+    .account-container{
+        width: 100%;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        flex-direction: column;
+    }
+    
   }
 
   @media screen and (max-width: 768px){
@@ -16,5 +24,90 @@
     .container-banner{
         justify-content: flex-start !important;
         margin-left: 40px !important;
+    }
+  }
+
+  @media screen and (max-width:1200px) {
+    .home-products-card{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+  }
+  @media screen and (max-width: 993px) {
+    ._home_res{
+        display: flex !important;
+        flex-direction: column-reverse !important;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0px;
+        margin: 0px 20px !important;
+    }
+    .home-about-image img{
+        width: 300px;
+        margin-bottom: 30px;
+    }
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+    }
+    #footer{
+        height: auto;
+        padding: 0px 0px 50px 0px;
+    }
+  }
+
+  @media screen and (max-width:410px) {
+    .footer-text{
+        font-size: 0.9rem;
+        width: 100%;
+    }
+    .footer-svg{
+        width: 45px !important;
+        height: 45px !important;
+    }
+    .banner-text{
+        width: 100% !important;
+        
+    }
+    .container-banner{
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100% !important;
+        margin: 0 !important;
+        box-sizing: border-box;
+        padding: 0px 20px;
+    }
+    .banner-text p{
+        word-wrap: break-word;
+    }
+    .banner-sub-text{
+        width: 100% !important;
+    }
+    .footer-content{
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .footer-box{
+        width: 100%;
+    }
+    .banner-btn-group{
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    #banner{
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .account{
+        width: 100%;
+    }
+    .account-sub{
+        width: 100%;
     }
   }

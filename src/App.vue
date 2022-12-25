@@ -1,9 +1,10 @@
 <script>
 import Login from './components/Login.vue';
 import Navbar from './components/Navbar.vue';
-import SignIn from './components/SignIn.vue';
+import SignIn from './components/SignUp.vue';
 import Banner from './components/Banner.vue';
 import HomeProducts from './components/Banner.vue';
+import Footer from './components/Footer.vue'
 export default{
     name: 'App',
     components: {
@@ -11,7 +12,8 @@ export default{
         Navbar,
         SignIn,
         Banner,
-        HomeProducts
+        HomeProducts,
+        Footer
     }
 }
 </script>
@@ -20,7 +22,9 @@ export default{
     <div>
         <Navbar/>
         <router-view />
+        <Footer/>
     </div>
+
 </template>
 
 <style>
