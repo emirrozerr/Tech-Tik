@@ -87,7 +87,7 @@
 .account{
     width: 350px;
     background-color: #fff;
-    height: 400px;
+    height: auto;
     border: 1px solid #DBDBDB;
     border-radius: 1px;
     box-sizing: border-box;
