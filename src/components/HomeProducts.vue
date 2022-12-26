@@ -13,26 +13,26 @@
             <div class="home-products">
                     <div class="container home-products-card">
 
-                        <b-card img-src="/src/assets/images/unnamed.webp" img-alt="Image" img-top tag="article" style="max-width: 21rem;min-height:400px;" class="pb-3 border-0 shadow">
-                                <b-card-title class="text-center fs-3">lorem</b-card-title>
+                        <b-card img-src="https://lh3.googleusercontent.com/W20i59pjsDF4WjMQcJiDGT2Y7bSTkInE0pSf9Dtb6jN0yVMeyqceCwr5RGteGUWxuyc=w1014" img-alt="Image" img-top tag="article" style="max-width: 21rem;min-height:400px;" class="pb-3 border-0 shadow">
+                                <b-card-title class="text-center fs-3">Laptop</b-card-title>
                             <div class="d-flex justify-content-center flex-column align-items-center">
-                                <span class="fs-5 mt-2 mb-4 text-muted">$31,82</span>
+                                <span class="fs-5 mt-2 mb-4 text-muted">17.899₺</span>
                                 <b-button href="#" variant="outline-success" class="rounded-4 p-2">Ürüne git</b-button>
                             </div>
                         </b-card>
 
-                        <b-card img-src="/src/assets/images/unnamed.webp" img-alt="Image" img-top tag="article" style="max-width: 21rem;min-height:400px;" class="pb-3 border-0 shadow">
-                                <b-card-title class="text-center fs-3">lorem</b-card-title>
+                        <b-card img-src="https://productimages.hepsiburada.net/s/7/375/9753454116914.jpg"  img-alt="Image" img-top tag="article" style="max-width: 21rem;min-height:400px;" class="pb-3 border-0 shadow">
+                                <b-card-title class="text-center fs-3">Sırt Çantası</b-card-title>
                             <div class="d-flex justify-content-center flex-column align-items-center">
-                                <span class="fs-5 mt-2 mb-4 text-muted">$63,78</span>
+                                <span class="fs-5 mt-2 mb-4 text-muted">299₺</span>
                                 <b-button href="#" variant="outline-success" class="rounded-4 p-2">Ürüne git</b-button>
                             </div>
                         </b-card>
 
-                        <b-card img-src="/src/assets/images/unnamed.webp" img-alt="Image" img-top tag="article" style="max-width: 21rem;min-height:400px;" class="pb-3 border-0 shadow">
-                                <b-card-title class="text-center fs-3">lorem</b-card-title>
+                        <b-card img-src="https://productimages.hepsiburada.net/s/33/550/10409414950962.jpg/format:webp" img-alt="Image" img-top tag="article" style="max-width: 21rem;min-height:400px;" class="pb-3 border-0 shadow">
+                                <b-card-title class="text-center fs-3">Meşe Odunu 20Kg</b-card-title>
                             <div class="d-flex justify-content-center flex-column align-items-center">
-                                <span class="fs-5 mt-2 mb-4 text-muted">$250,00</span>
+                                <span class="fs-5 mt-2 mb-4 text-muted">199₺</span>
                                 <b-button href="#" variant="outline-success" class="rounded-4 p-2">Ürüne git</b-button>
                             </div>
                         </b-card>

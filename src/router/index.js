@@ -5,6 +5,7 @@ import Login from '../components/Login.vue'
 import SignUp from '../components/SignUp.vue'
 import Products from '../components/Products.vue'
 
+
 Vue.use(VueRouter)
 
 const router = new VueRouter({
@@ -36,13 +37,14 @@ const router = new VueRouter({
       }
     },
     {
-      path: '/products',
+      path: '/products/:category',
       name: 'Products',
       component: Products,
       meta:{
         title:'Products'
       }
     },
+    
   ]
 })
 

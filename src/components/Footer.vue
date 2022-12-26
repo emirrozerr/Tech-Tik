@@ -18,7 +18,7 @@
                     </div>
                     <div class="footer-box email">
                         <div class="footer-svg"><b-icon-mailbox></b-icon-mailbox></div>
-                        <div class="footer-text">name@domain.com</div>   
+                        <div class="footer-text">name@techtik.com</div>   
                     </div>
                 </div>
         </div>

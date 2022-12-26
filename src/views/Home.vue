@@ -12,11 +12,9 @@ export default {
 
 <template>
     <div>
-        <Navbar/>
         <Banner/>
         <HomeProducts/>
         <HomeAbout/>
-        <Footer/>
     </div>
 </template>
 
