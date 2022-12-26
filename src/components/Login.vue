@@ -47,12 +47,12 @@
               
                     <b-button @click="checkForm()" class="account-btn mt-3" variant="primary">Login</b-button>
 
-                      <a class="account-link" href="">Forgot Password ?</a>
+                      <a class="account-link" >Forgot Password ?</a>
                   </form>
                 </div>
             </div>
             <div class="account-sub">
-               <p >Don't have an account ? <a href="" @click="goToSignUp()">Sign Up</a></p> 
+               <p >Don't have an account ? <a  @click="goToSignUp()">Sign Up</a></p> 
             </div>
         </div>
         </div>
@@ -82,7 +82,7 @@ export default {
   },
   methods: {
     goToSignUp(){
-      this.$router.push('/signUp')
+      this.$router.push('/Tek-Tik/signUp')
     },
     checkForm(){
       console.log(this.email)
@@ -103,7 +103,7 @@ export default {
       this.userErrors = []
       if(this.email == localStorage.getItem('email')){
         if(this.password == localStorage.getItem('password')){
-          this.$router.push('/home')
+          this.$router.push('/Tek-Tik/home')
         }
       }else{
         this.userErrors = "Incorrect email or password"

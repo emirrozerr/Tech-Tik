@@ -23,7 +23,15 @@ const router = new VueRouter({
       }
     },
     {
-      path: '/home',
+      path: '/Tek-Tik/',
+      name: 'Login',
+      component: Login,
+      meta:{
+        title:'Login'
+      }
+    },
+    {
+      path: '/Tek-Tik/home',
       name: 'home',
       component: Home,
       meta:{
@@ -31,7 +39,7 @@ const router = new VueRouter({
       }
     },
     {
-      path: '/signup',
+      path: '/Tek-Tik/signup',
       name: 'SignUp',
       component: SignUp,
       meta:{
@@ -39,7 +47,7 @@ const router = new VueRouter({
       }
     },
     {
-      path: '/products/:category',
+      path: '/Tek-Tik/products/:category',
       name: 'Products',
       component: Products,
       meta:{
@@ -47,7 +55,7 @@ const router = new VueRouter({
       }
     },
     {
-      path: '/productPage/:id',
+      path: '/Tek-Tik/productPage/:id',
       name: 'ProductPage',
       component: ProductPage,
       meta:{
@@ -55,7 +63,7 @@ const router = new VueRouter({
       }
     },
     {
-      path: '/about',
+      path: '/Tek-Tik/about',
       name: 'About',
       component: HomeAbout,
       meta:{
@@ -63,7 +71,7 @@ const router = new VueRouter({
       }
     },
     {
-      path: '/basket',
+      path: '/Tek-Tik/basket',
       name: 'Basket',
       component: Basket,
       meta:{

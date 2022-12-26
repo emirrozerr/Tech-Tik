@@ -1,32 +1,32 @@
 <template>
     <nav class="navbar navbar-expand-lg bg-light p-5">
   <div class="container">
-    <a class="navbar-brand fs-4" href="/home">Tech-Tık</a>
+    <a class="navbar-brand fs-4" href="/Tek-Tik/home">Tech-Tık</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/home" >Home</a>
+          <a class="nav-link active" aria-current="page" href="/Tek-Tik/home" >Home</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Categories
           </a>
           <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item" href="/products/Elektronik">Elektronik</a></li>
-            <li><a class="dropdown-item" href="/products/Moda">Moda</a></li>
-            <li><a class="dropdown-item" href="/products/EvveKırtasiye">Ev ve Kırtasiye</a></li>
-            <li><a class="dropdown-item" href="/products/Bahçe">Bahçe</a></li>
-            <li><a class="dropdown-item" href="/products/BebekveOyuncak">Bebek ve Oyuncak</a></li>
-            <li><a class="dropdown-item" href="/products/Spor">Spor</a></li>
-            <li><a class="dropdown-item" href="/products/Kozmetik">Kozmetik</a></li>
-            <li><a class="dropdown-item" href="/products/Hobi">Hobi</a></li>
-            <li><a class="dropdown-item" href="/products/Kitap">Kitap</a></li>
+            <li><a class="dropdown-item" href="/Tek-Tik/products/Elektronik">Elektronik</a></li>
+            <li><a class="dropdown-item" href="/Tek-Tik/products/Moda">Moda</a></li>
+            <li><a class="dropdown-item" href="/Tek-Tik/products/EvveKırtasiye">Ev ve Kırtasiye</a></li>
+            <li><a class="dropdown-item" href="/Tek-Tik/products/Bahçe">Bahçe</a></li>
+            <li><a class="dropdown-item" href="/Tek-Tik/products/BebekveOyuncak">Bebek ve Oyuncak</a></li>
+            <li><a class="dropdown-item" href="/Tek-Tik/products/Spor">Spor</a></li>
+            <li><a class="dropdown-item" href="/Tek-Tik/products/Kozmetik">Kozmetik</a></li>
+            <li><a class="dropdown-item" href="/Tek-Tik/products/Hobi">Hobi</a></li>
+            <li><a class="dropdown-item" href="/Tek-Tik/products/Kitap">Kitap</a></li>
 
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="/products/allProducts">Tüm ürünler</a></li>
+            <li><a class="dropdown-item" href="/Tek-Tik/products/allProducts">Tüm ürünler</a></li>
           </ul>
         </li>
       </ul>
