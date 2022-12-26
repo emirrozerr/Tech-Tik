@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Login from '../components/Login.vue'
 import SignUp from '../components/SignUp.vue'
+import Products from '../components/Products.vue'
 
 Vue.use(VueRouter)
 
@@ -10,14 +11,6 @@ const router = new VueRouter({
   mode: 'history',
   base: import.meta.env.BASE_URL,
   routes: [
-    {
-      path: '/home',
-      name: 'home',
-      component: Home,
-      meta:{
-        title:'Home'
-      }
-    },
     {
       path: '/',
       name: 'Login',
@@ -27,11 +20,27 @@ const router = new VueRouter({
       }
     },
     {
+      path: '/home',
+      name: 'home',
+      component: Home,
+      meta:{
+        title:'Home'
+      }
+    },
+    {
       path: '/signup',
       name: 'SignUp',
       component: SignUp,
       meta:{
         title:'SignUp'
+      }
+    },
+    {
+      path: '/products',
+      name: 'Products',
+      component: Products,
+      meta:{
+        title:'Products'
       }
     },
   ]
