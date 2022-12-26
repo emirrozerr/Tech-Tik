@@ -7,7 +7,7 @@
             <div class="container home-products-section-container">
                 <div class="home-products-section-text">
                     <h2>
-                        {{$route.params.category == "EvveKırtasiye" ? "Ev ve Kırtasiye" : ($route.params.category =="BebekveOyuncak" ?  "Bebek ve Oyuncak" : $route.params.category)}}
+                        {{$route.params.category == "EvveKırtasiye" ? "Ev ve Kırtasiye" : ($route.params.category =="BebekveOyuncak" ?  "Bebek ve Oyuncak" : ($route.params.category == allProducts ? "All" : $route.params.category))}}
                          <span>Products</span></h2>
                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected randomised words which don't look even slightly believable</p>
                 </div>
@@ -39,7 +39,7 @@
                         </b-card-body>
                             <div class="d-flex justify-content-center flex-column align-items-center padding">
                                 <span class="fs-5 mt-2 mb-4 text-muted">{{ USDollar.format(product.urunFiyati) }}</span>
-                                <b-button href="#" variant="outline-success" class="rounded-4 p-2">Ürüne git</b-button>
+                                <b-button :href="'/productPage/'+ product.urunID" variant="outline-success" class="rounded-4 p-2">Ürüne git</b-button>
                             </div>
                         </b-card>
 
@@ -55,6 +55,7 @@ export default {
       return {
         data: [],
         allProducts: "allProducts",
+        allProducts2: "All Products",
         USDollar: new Intl.NumberFormat('tr-TR', {
             style: 'currency',
             currency: 'TRY',

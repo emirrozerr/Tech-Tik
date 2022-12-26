@@ -4,7 +4,9 @@ import Home from '../views/Home.vue'
 import Login from '../components/Login.vue'
 import SignUp from '../components/SignUp.vue'
 import Products from '../components/Products.vue'
-
+import ProductPage from '../components/ProductPage.vue'
+import HomeAbout from '../components/HomeAbout.vue'
+import Basket from '../components/Basket.vue'
 
 Vue.use(VueRouter)
 
@@ -44,7 +46,30 @@ const router = new VueRouter({
         title:'Products'
       }
     },
-    
+    {
+      path: '/productPage/:id',
+      name: 'ProductPage',
+      component: ProductPage,
+      meta:{
+        title:'Products'
+      }
+    },
+    {
+      path: '/about',
+      name: 'About',
+      component: HomeAbout,
+      meta:{
+        title:'About'
+      }
+    },
+    {
+      path: '/basket',
+      name: 'Basket',
+      component: Basket,
+      meta:{
+        title:'Basket'
+      }
+    },
   ]
 })
 

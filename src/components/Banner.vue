@@ -11,8 +11,8 @@
                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
                 </div>
                 <div class="banner-btn-group">
-                    <a href="" class="banner-btn">Buy Now</a>
-                    <a href="" class="banner-btn">About</a>
+                    <a href="/products/allProducts" class="banner-btn">Buy Now</a>
+                    <a href="/about" class="banner-btn">About</a>
                 </div>
                 
             </div>    
