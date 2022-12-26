@@ -35,7 +35,7 @@
                       type="text"
                       placeholder="Email"
                     >
-                    <small style="text-align:left" v-if="errors.length" class="text-danger " >{{ errors[0] }}</small>
+                   <div v-if="errors.length" class="_error_val mb-2"><small  class="text-danger " >{{ errors[0] }}</small></div> 
             
                     <input
                       id="password"
@@ -43,7 +43,7 @@
                       type="password"
                       placeholder="Password"
                     >
-                    <small style="text-align:left" v-if="errors.length" class="text-danger " >{{ errors[1] }}</small>
+                    <div v-if="errors.length" class="_error_val"><small class="text-danger " >{{ errors[1] }}</small></div>
               
                     <b-button @click="checkForm()" class="account-btn mt-3" variant="primary">Login</b-button>
 
@@ -123,6 +123,12 @@ export default {
 </script>
 <style scoped>
 
+._error_val{
+  display: flex;
+  justify-content: flex-start;
+  width: 80%;
+  padding: 2px 0px;
+}
 .content{
     height: 100vh;
 }
